@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+	font-family: cursive, sans-serif;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header  */
+
+.navbar {
+	background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%);
+	color: white !important;
+	border-bottom: 3px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+	text-decoration: none;
+	color: white;
+	font-weight: 800;
+	background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a:hover {
+	color: unset;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .btn,
+.table-secondary {
+	background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+	background: white !important;
+	color: black !important;
+	opacity: 0.5;
+}
+
+/* home page  */
+
+body {
+	background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%);
+}
+
+.table-responsive {
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.update-icon,
+.delete-icon {
+	width: 30%;
+	margin: auto;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.update-icon:hover,
+.delete-icon:hover {
+	backdrop-filter: contrast(0.8);
+}
+
+.add-btn,
+button {
+	background: linear-gradient(90.21deg, rgb(170, 54, 124) -5.91%, rgb(74, 47, 189) 111.58%);
+	color: white;
 }
